@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edu Market main page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset2.css">
+    <!-- <link rel="stylesheet" href="css/shop.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean"
+		rel="stylesheet">
+	<!--font-family: 'Nanum Gothic', sans-serif;-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+	<!--font-family: 'Roboto', sans-serif;-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+	<!--font-family: 'Roboto Condensed', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap&subset=korean" rel="stylesheet">
+    <script>
+        /*메뉴바 열고닫는 스크립트*/
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</head>
+
+<body class ="body">
+    <div id = "wrapper">
+    <header id="header">
+        <a class="logo" href="mainpage.html">Edu Market</a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="align-x" onclick="closeNav()">&times</a>
+            <a href="./html/Keyboard.html">Keyboard</a>
+            <a href="./html/Headset.html">Headset</a>
+            <a href="./html/Mouse.html">Mouse</a>
+            <a href="./html/MIC.html">MIC</a>
+            <a href="./html/Webcam.html">Webcam</a>
+            <a href="./html/Custom.html">Custom</a>
+            
+        </div>
+        <div id="select-menu" class="logo" onclick="location.href='./html/login.html'";>Log In</div>
+        <div id="select-menu" class="logo" onclick="openNav()">MENU</div>
+    </header>
+
+    <section>
+        <!--메인 베너-->
+        <div id="Main_banner">
+            <div class="slideshow-container">
+                <div id="Page_Main">
+                    <img class="mySlides fade" src="image/banner/bannerImg (1).png" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (2).jpg" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (3).jpg" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (4).png" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (5).png" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (6).png" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (7).jpg" width="100%" height="700">
+                    <img class="mySlides fade" src="image/banner/bannerImg (8).jpg" width="100%" height="700">
+                </div>
+            </div>
+            <script>
+                var Index = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    Index++;
+                    if (Index > slides.length) { Index = 1 }
+                    slides[Index - 1].style.display = "block";
+                    setTimeout(showSlides, 3000);
+                }
+            </script>
+            <!--이미지 슬라이드 스크립트-->
+        </div>
+    </section>
+
+    <!--section id="Event_banner">
+        <div>
+            <img src="image/EventBanner/EventBanner2.jpg" width="1200" height=300>
+        </div>
+    </section-->
+
+    <section id="Product_title">
+        <div>
+            <div id="Product_main">Edu Market</div>
+            <h2>
+                <span>Best seller</span>
+            </h2>
+            <h1>Edu Market의 베스트 상품입니다</h1>
+        </div>
+
+    </section>
+    
+    <div class="item_box">
+        <div id="Product">
+                <div id="Shop_Itemrow1">
+                        <div id="Shop_Itemsec5">
+                            <div id="item">
+                                <a href="html\VarmiloPage.html">
+                                    <img src="image/product/Varmilo/VarmiloKeyboard (1).jpg" width="290" height="390">
+                                </a>
+                            </div>
+                        <div id="Shop_inform">
+                            <a href="html\VarmiloPage.html">VARMILO VA87MAC 밀키 화이트 PBT 염료승화 영문 갈축</a><br>
+                            <div id = "Varmilo_keyboard">VARMILO 키보드</div>
+                            <div id = "Varmilo_price">￦168,000</div>
+                        </div>
+                    </div>
+    
+                        <div id="Shop_Itemsec3">
+                            <div id="item"><a href="html/mainheadset.html"><img src="image/product/Headset/G733_s.jpg" width="290" height="390"></a></div>
+                            <div id="Shop_inform">
+                                <a href="html/mainheadset.html">logitech G733 LIGHTSPEED DTS 7.1 무선 게이밍 헤드셋 </a><br>
+                                <div id = "Varmilo_keyboard">Headset</div>
+                                <div id = "Varmilo_price">￦169,000</div>
+                            </div>
+                        </div>
+        
+        
+                        <div id="Shop_Itemsec4">
+                            <div id="item"><a href="html/mainmouse.html"><img src="image/product/Mouse/Pebble_s.jpg" width="290" height="390"></a></div>
+                            <div id="Shop_inform">
+                                <a href="html/mainmouse.html">logitech Pebble 무소음 마우스</a><br>
+                                <div id = "Varmilo_keyboard">Mouse</div>
+                                <div id = "Varmilo_price">￦21,900</div>
+                            </div>
+                        </div>
+    
+                        <div id="Shop_Itemsec5">
+                                <div id="item">
+                                    <a href="html/mainwebcam.html">
+                                        <img src="image/product/Webcam/C920_s.jpg" width="290" height="390">
+                                    </a>
+                                </div>
+                            <div id="Shop_inform">
+                                <a href="html/mainwebcam.html">logitech 웹캠 C920 HD PRO 웹카메라</a><br>
+                                <div id = "Varmilo_keyboard">Web Cam</div>
+                                <div id = "Varmilo_price">￦72,800</div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div id="Shop_Itemrow2">
+    
+                        <div id="Shop_Itemsec5">
+                            <div id="item">
+                                <a href="html/DuckyPage.html">
+                                    <img src="image/product/Ducky/DuckyKeyboard (8).png" width="290" height="390">
+                                </a>
+                            </div>
+                        <div id="Shop_inform">
+                            <a href="html/DuckyPage.html">DUCKY ONE DYE-SUB 화이트 그레이 PBT 염료승화 영문</a><br>
+                            <div id = "Varmilo_keyboard">DUCKY 키보드</div>
+                            <div id = "Varmilo_price">￦118,000</div>
+                        </div>
+                    </div>
+                        <div id="Shop_Itemsec6">
+                                <div id="item">
+                                    <a href="html/DuckyPage_WhitePink.html">
+                                        <img src="image/product/Ducky/DuckyKeyboard (9).png" width="290" height="390">
+                                    </a>
+                                </div>
+                            <div id="Shop_inform">
+                                <a href="html/DuckyPage_WhitePink.html">DUCKY ONE DYE-SUB 화이트 핑크 PBT 염료승화 영문</a><br>
+                                <div id = "Varmilo_keyboard">DUCKY 키보드</div>
+                                <div id = "Varmilo_price">￦119,000</div>
+                            </div>
+                        </div>
+    
+                        <div id = "Shop_Itemsec7">
+                                <div id="item">
+                                    <a href="html/DuckyPage_BACKLIT.html">
+                                        <img src="image/product/Ducky/DuckyKeyboard (3).jpg" width="290" height="390">
+                                    </a>
+                                </div>
+                                <div id="Shop_inform">
+                                    <a href="html/DuckyPage_BACKLIT.html">DUCKY ONE TKL 측각 NON-BACKLIT PBT 한글</a><br>
+                                    <div id = "Varmilo_keyboard">DUCKY 키보드</div>
+                                    <div id = "Varmilo_price">￦99,000</div>
+                                </div>
+                            </div>
+            
+            
+                            <div id = "Shop_Itemsec8">
+                                <div id="item">
+                                    <a href="html/DuckyPage_SEAMLESS.html">
+                                        <img src="image/product/Ducky/DuckyKeyboard (3).png" width="290" height="390">
+                                    </a>
+                                </div>
+                                <div id = "Shop_inform">
+                                    <a href="html/DuckyPage_SEAMLESS.html">DUCKY ONE 2 TKL SEAMLESS WHITE PBT 이중사출 한글</a><br>
+                                    <div id = "Varmilo_keyboard">DUCKY 키보드</div>
+                                    <div id = "Varmilo_price">￦138,000</div>
+                                </div>
+                            </div>
+                    </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id = "footer_inform">
+            <div id = "inform_frame">
+                <div id = "site_inform">㈜edu-market &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표전화 : 010-5555-1234 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 웹개발및응용</div>
+            </div>
+        </div>
+        <div id = "myinform_frame">
+            <div id = "myinform">학과 &nbsp;:&nbsp; e비즈니스학 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;주소 : 부산광역시 부산진구 동의대학교 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일 : edumarket@naver.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+
+            </div>
+            <div id = "myinform">
+                    전화 : 010-5555-1234 (상담시간 오전 09시 ~ 오후 18시)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    전화상담 휴무일 : 토,일 및 공휴일
+                </div>
+            <div id = "myinform">
+                <span>edumarket 공식 홈페이지</span> : ⓒ edumarket.co.kr
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+
+</html>
